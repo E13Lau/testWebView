@@ -118,7 +118,6 @@
 				TargetAttributes = {
 					6512FA241DF562CF00B40DF6 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 47TTP8Z5TS;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -283,11 +282,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 47TTP8Z5TS;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = testWebView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.glrou.testWebView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glrou.testWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -296,11 +295,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 47TTP8Z5TS;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = testWebView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.glrou.testWebView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glrou.testWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
