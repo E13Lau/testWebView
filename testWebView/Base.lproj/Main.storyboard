@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,14 +26,14 @@
                                     <constraint firstAttribute="width" constant="97" id="Hf1-pI-VL5"/>
                                     <constraint firstAttribute="height" constant="64" id="M7a-xd-OjL"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="present"/>
                                 <connections>
                                     <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F4c-N6-PCF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3v-9I-qq8">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3v-9I-qq8">
                                 <rect key="frame" x="138.5" y="419" width="97" height="64"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="push"/>
                                 <connections>
                                     <action selector="push:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EzA-Gr-iOU"/>
                                 </connections>

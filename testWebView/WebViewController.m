@@ -26,9 +26,10 @@
     
     [self.view addSubview:web];
     
-    
-//    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(itemAction)];
-//    self.navigationItem.rightBarButtonItem = item;
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(itemAction)];
+    UIBarButtonItem *close = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(close)];
+    self.navigationItem.rightBarButtonItem = item;
+    self.navigationItem.leftBarButtonItem = close;
     // Do any additional setup after loading the view.
 }
 
@@ -37,14 +38,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-//- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion {
-////    [super dismissViewControllerAnimated:flag completion:completion];
-//    NSLog(@"==================%@",self);
-//}
+- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion {
+    if (self.presentedViewController) {
+        [super dismissViewControllerAnimated:flag completion:completion];
+    }
+//    [super dismissViewControllerAnimated:flag completion:completion];
+}
 
 - (void)itemAction {
-    
-
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"标题" message:@"这个是UIAlertController的默认样式" preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
     UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -55,7 +56,10 @@
     [alertController addAction:cancelAction];
     [alertController addAction:okAction];
     [self presentViewController:alertController animated:true completion:nil];
+}
 
+- (void)close {
+    [self.presentingViewController dismissViewControllerAnimated:true completion:nil];
 }
 
 /*

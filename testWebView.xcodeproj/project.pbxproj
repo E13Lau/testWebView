@@ -14,6 +14,7 @@
 		6512FA351DF562CF00B40DF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6512FA341DF562CF00B40DF6 /* Assets.xcassets */; };
 		6512FA381DF562CF00B40DF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6512FA361DF562CF00B40DF6 /* LaunchScreen.storyboard */; };
 		6512FA411DF5631200B40DF6 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6512FA401DF5631200B40DF6 /* WebViewController.m */; };
+		653266F61DF65F3B00133F97 /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 653266F51DF65F3B00133F97 /* CustomNavigationController.m */; };
 		6544F4681DF64B0300DEA6A1 /* web.html in Resources */ = {isa = PBXBuildFile; fileRef = 6544F4671DF64B0300DEA6A1 /* web.html */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,8 @@
 		6512FA391DF562CF00B40DF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6512FA3F1DF5631200B40DF6 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		6512FA401DF5631200B40DF6 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		653266F41DF65F3B00133F97 /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
+		653266F51DF65F3B00133F97 /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
 		6544F4671DF64B0300DEA6A1 /* web.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = web.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +72,8 @@
 				6512FA2F1DF562CF00B40DF6 /* ViewController.m */,
 				6512FA3F1DF5631200B40DF6 /* WebViewController.h */,
 				6512FA401DF5631200B40DF6 /* WebViewController.m */,
+				653266F41DF65F3B00133F97 /* CustomNavigationController.h */,
+				653266F51DF65F3B00133F97 /* CustomNavigationController.m */,
 				6544F4671DF64B0300DEA6A1 /* web.html */,
 				6512FA311DF562CF00B40DF6 /* Main.storyboard */,
 				6512FA341DF562CF00B40DF6 /* Assets.xcassets */,
@@ -118,6 +123,7 @@
 				TargetAttributes = {
 					6512FA241DF562CF00B40DF6 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 47TTP8Z5TS;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -160,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6512FA301DF562CF00B40DF6 /* ViewController.m in Sources */,
+				653266F61DF65F3B00133F97 /* CustomNavigationController.m in Sources */,
 				6512FA2D1DF562CF00B40DF6 /* AppDelegate.m in Sources */,
 				6512FA2A1DF562CF00B40DF6 /* main.m in Sources */,
 				6512FA411DF5631200B40DF6 /* WebViewController.m in Sources */,
@@ -282,11 +289,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 47TTP8Z5TS;
 				INFOPLIST_FILE = testWebView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.glrou.testWebView;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.glrou.testWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -295,11 +302,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 47TTP8Z5TS;
 				INFOPLIST_FILE = testWebView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.glrou.testWebView;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.glrou.testWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

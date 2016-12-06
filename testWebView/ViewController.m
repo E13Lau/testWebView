@@ -8,15 +8,13 @@
 
 #import "ViewController.h"
 #import "WebViewController.h"
+#import "CustomNavigationController.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-
-
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,9 +29,8 @@
 
 - (IBAction)buttonAction:(UIButton *)sender {
     WebViewController *web = [[WebViewController alloc]init];
-//    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:web];
-    [self presentViewController:web animated:true completion:nil];
-    
+    CustomNavigationController *nav = [[CustomNavigationController alloc]initWithRootViewController:web];
+    [self presentViewController:nav animated:true completion:nil];
 }
 
 - (IBAction)push:(UIButton *)sender {
